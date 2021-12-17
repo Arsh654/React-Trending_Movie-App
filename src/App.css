@@ -149,10 +149,14 @@
 }
 
 .fav-genere {
-  padding: 3rem;
+  margin: 2rem;
 }
 .fav-side {
-  padding: 3rem;
+  padding: 2rem;
+}
+
+.tab {
+  margin-top: 2rem;
 }
 
 .common {
@@ -161,6 +165,9 @@
   background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
 }
 
+.cur {
+  cursor: pointer;
+}
 /* .prevandnext {
   color: #282c34;
   background-color: #f8f9d2;

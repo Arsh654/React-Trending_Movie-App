@@ -39,15 +39,16 @@ export default class Movies extends Component {
     let data = res.data;
 
     // this.favErrorandle(data);
-
     this.setState(
       {
         movies: [...data.results],
         count: this.state.count + 1,
       },
       () => {
+        this.handleFavClickState();
         if (this.state.count === 1) {
           // console.log(this.state.movies, "BBBBBBB");
+
           this.setState({
             banMov: this.state.movies,
           });
@@ -55,7 +56,7 @@ export default class Movies extends Component {
       }
     );
 
-    console.log(this.state.movies, "DADFFfAW");
+    // console.log(this.state.movies, "DADFFfAW");
   };
 
   ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -124,14 +125,14 @@ export default class Movies extends Component {
       oldData.push(movie);
     }
     localStorage.setItem("movies", JSON.stringify(oldData));
-    console.log(oldData);
+    console.log(oldData, "XXXXXXXXXXXXXXXXXX");
     this.handleFavClickState();
   };
 
   handleFavClickState = () => {
     let oldData = JSON.parse(localStorage.getItem("movies") || "[]");
     let temp = oldData.map((mov) => mov.id);
-    console.log(temp, "SDASADsa");
+    console.log(temp, "SOLANKI");
     this.setState({
       favourites: [...temp],
     });

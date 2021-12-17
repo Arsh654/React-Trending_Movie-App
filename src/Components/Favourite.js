@@ -383,11 +383,11 @@ export default class Favourite extends Component {
           <div className="main">
             <div className="row">
               <div className="col-lg-3 col-sm-12">
-                <ul class="list-group fav-genere common">
+                <ul class="list-group fav-genere common cur">
                   {this.state.genres.map((genre) =>
                     this.state.currgen == genre ? (
                       <li
-                        class="list-group-item common"
+                        class="list-group-item common "
                         // style={{
                         //   background: "#3f51b5",
                         //   color: "white",
@@ -433,25 +433,25 @@ export default class Favourite extends Component {
                       <tr>
                         <th scope="col">Title</th>
                         <th scope="col">Genre</th>
-                        <th scope="col">
+                        <th scope="col" style={{ textAlign: "center" }}>
                           <i
-                            class="fas fa-sort-up"
+                            class="fas fa-sort-up cur"
                             onClick={this.sortPopularityDesc}
                           />
                           Popularity
                           <i
-                            class="fas fa-sort-down"
+                            class="fas fa-sort-down cur"
                             onClick={this.sortPopularityAsc}
                           ></i>
                         </th>
-                        <th scope="col">
+                        <th scope="col" style={{ textAlign: "center" }}>
                           <i
-                            class="fas fa-sort-up"
+                            class="fas fa-sort-up cur"
                             onClick={this.sortRatingDesc}
                           ></i>
                           Rating
                           <i
-                            class="fas fa-sort-down"
+                            class="fas fa-sort-down cur"
                             onClick={this.sortRatingAsc}
                           ></i>
                         </th>
@@ -470,8 +470,12 @@ export default class Favourite extends Component {
                             {movieObj.original_title}
                           </td>
                           <td>{genreids[movieObj.genre_ids[0]]}</td>
-                          <td>{movieObj.popularity}</td>
-                          <td>{movieObj.vote_average}</td>
+                          <td style={{ textAlign: "center" }}>
+                            {movieObj.popularity}
+                          </td>
+                          <td style={{ textAlign: "center" }}>
+                            {movieObj.vote_average}
+                          </td>
                           <td>
                             <button
                               type="button"

@@ -9,7 +9,7 @@ export default class Banner extends Component {
   render() {
     // let movie = movies.results[0];
     let movie = this.props.pic[0];
-    console.log(movie, "AAAAAAAAA", this.props);
+    // console.log(movie, "AAAAAAAAA", this.props);
     return (
       <>
         {movie == "" ? (
