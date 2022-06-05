@@ -6,11 +6,13 @@ import Message from "./components/Message";
 import Counter from "./components/Counter";
 import ParentCompo from "./components/ParentCompo";
 import CounterOne from "./components/CounterOne";
+import FocusInput from "./components/FocusInput";
 
 function App() {
   return (
     <div className="App">
-      <CounterOne />
+      <FocusInput />
+      {/* <CounterOne /> */}
       {/* <Counter /> */}
       {/* <Counter /> */}
       {/* <Message /> */}
