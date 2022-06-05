@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a28640d0.css",
+    "main.js": "/static/js/main.cba93844.js",
+    "static/media/movflix.png": "/static/media/movflix.34f5f4a2a100603be62c.png",
+    "static/media/Arshad_1.2YOE_Java_DEV.pdf": "/static/media/Arshad_1.2YOE_Java_DEV.75e49b143d5f74026c1d.pdf",
+    "static/media/EMS.png": "/static/media/EMS.e52124a2696448227a99.png",
+    "index.html": "/index.html",
+    "main.a28640d0.css.map": "/static/css/main.a28640d0.css.map",
+    "main.cba93844.js.map": "/static/js/main.cba93844.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a28640d0.css",
+    "static/js/main.cba93844.js"
+  ]
+}
