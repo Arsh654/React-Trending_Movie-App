@@ -5,11 +5,13 @@ import Tryjsx from "./components/Tryjsx";
 import Message from "./components/Message";
 import Counter from "./components/Counter";
 import ParentCompo from "./components/ParentCompo";
+import CounterOne from "./components/CounterOne";
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <CounterOne />
+      {/* <Counter /> */}
       {/* <Counter /> */}
       {/* <Message /> */}
       {/* <Greet name="Arshad" sport="Cricket">
